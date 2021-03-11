@@ -4,8 +4,17 @@ from os import environ
 SESSION_CONFIGS = [
     dict(
         name='public_goods',
+        display_name="Public Goods: Control",
         app_sequence=['public_goods', 'payment_info'],
         num_demo_participants=3,
+        treatment=0
+    ),
+    dict(
+        name='public_goods1',
+        display_name="Public Goods: Treatment 1",
+        app_sequence=['public_goods', 'payment_info'],
+        num_demo_participants=3,
+        treatment=1
     ),
     dict(
         name='guess_two_thirds',
